@@ -19,7 +19,7 @@ A fault-tolerant and highly available distributed task scheduler designed to man
 
 ChronoSync operates using a classic **Coordinator-Worker** model. The core components work together to ensure tasks are scheduled, managed, and executed with high reliability.
 
-*(Note: Replace the placeholder URL with a link to your actual architecture diagram image)*
+
 
 ### 1\. The Coordinator
 
