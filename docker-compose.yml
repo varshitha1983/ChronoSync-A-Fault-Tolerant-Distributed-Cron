@@ -1,0 +1,17 @@
+version: "3"
+services:
+  coordinator:
+    build:
+      context: .
+      dockerfile: coordinator-dockerfile
+    ports:
+      - "8080:8080"
+
+  worker:
+    build:
+      context: .
+      dockerfile: worker-dockerfile
+    environment:
+      - WORKER_ADDRESS=worker
+    depends_on:
+      - coordinator
